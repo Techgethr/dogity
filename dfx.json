@@ -1,0 +1,9 @@
+{
+  "canisters": {
+    "mi_canister": {
+      "main": "src/dogity",
+      "type": "rust"
+    }
+  },
+  "version": 1
+} 
