@@ -1,9 +1,6 @@
 [workspace]
 members = [
-  "src/ck-doge/ck-doge-canister",
-  "src/ck-doge/ck-doge-minter",
-  "src/ck-doge/dogecoin",
-  "dogity/",
+  "dogity/"
 ]
 resolver = "2"
 
