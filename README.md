@@ -19,6 +19,40 @@ This project implements a modular restaking protocol inspired by EigenLayer, but
 - **Scalability and Speed:** ICP provides high throughput, low latency, and on-chain programmability, making it ideal for building scalable restaking and security protocols.
 - **Composability:** Canisters on ICP can interact with each other and with external blockchains, allowing for rich, composable security and staking applications.
 
+## Platform Flow Diagram
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant D as Dogity Canister
+    participant CK as ck-doge Canister
+    participant S as AVS (Service)
+    participant O as Operator
+
+    %% User flow
+    U->>D: 1. Request deposit address
+    D-->>U: 2. Return DOGE address
+    U->>CK: 3. Send DOGE
+    CK-->>D: 4. Notify/confirm deposit
+    U->>D: 5. Register deposit (txid, amount)
+    U->>D: 6. Assign stake to AVS
+    D-->>S: 7. Assigns security
+    U->>D: 8. Query balance/assignments
+    U->>D: 9. Request withdrawal
+    D->>CK: 10. Send DOGE
+    CK-->>U: 11. DOGE received
+
+    %% AVS flow
+    S->>D: 12. Query assigned security
+    S->>D: 13. Submit slashing request (with proof)
+    D-->>S: 14. Confirm slashing
+
+    %% Operator flow (optional)
+    U-->>O: 15. Delegate stake (optional)
+    O->>S: 16. Validate for AVS
+    S-->>O: 17. Operator receives rewards/fees
+```
+
 ## Overview
 - **Users** can deposit Dogecoin (DOGE) into the canister using ck-doge integration.
 - **Restaking:** Users can assign their DOGE stake to secure any number of services (AVS: Actively Validated Services).
