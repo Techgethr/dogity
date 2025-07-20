@@ -1,0 +1,38 @@
+[package]
+name = "ck-doge-canister"
+description = "Interact with Dogecoin network from the Internet Computer."
+repository = "https://github.com/ldclabs/ck-doge/tree/main/src/ck-doge-canister"
+publish = false
+
+version.workspace = true
+edition.workspace = true
+keywords.workspace = true
+categories.workspace = true
+license.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bytes = { workspace = true }
+candid = { workspace = true }
+ciborium = { workspace = true }
+sha3 = { workspace = true }
+ic-cdk = { workspace = true }
+hex = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_bytes = { workspace = true }
+base64 = { workspace = true }
+num-traits = { workspace = true }
+once_cell = { workspace = true }
+ic-cdk-timers = { workspace = true }
+ic-stable-structures = { workspace = true }
+icrc-ledger-types = { workspace = true }
+lazy_static = { workspace = true }
+bitcoin = { workspace = true }
+dogecoin = { path = "../dogecoin", version = "0.5" }
+getrandom = { version = "0.2", features = ["custom"] }
+ic-crypto-extended-bip32 = { git = "https://github.com/dfinity/ic/", rev = "d19fa446ab35780b2c6d8b82ea32d808cca558d5" }
