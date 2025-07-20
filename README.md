@@ -2,6 +2,23 @@
 
 This project implements a modular restaking protocol inspired by EigenLayer, but using Dogecoin (via ck-doge/Chain Fusion) as the staking token on the Internet Computer (ICP).
 
+## Why Restake with Dogecoin on ICP?
+
+### Benefits of Using Dogecoin for Restaking
+- **Large and Liquid Market:** Dogecoin is one of the most widely held and traded cryptocurrencies, with a large, active community and deep liquidity. This makes it an attractive asset for staking and securing new decentralized services.
+- **Lower Entry Barriers:** DOGE's low transaction fees and broad accessibility allow a wider range of users to participate in restaking and decentralized security, compared to more expensive or less accessible tokens.
+- **Diversified Security:** By enabling restaking with DOGE, new services can tap into a different pool of economic security, reducing reliance on a single asset and increasing the robustness of the ecosystem.
+
+### Contributing to Security and Innovation
+- **Bootstrapping New Services:** New protocols and infrastructure projects can leverage the economic weight of the Dogecoin market to bootstrap their own security, without needing to launch a new token or attract traditional stakers.
+- **Restaking Model:** Users can assign their DOGE stake to secure multiple services (AVS), earning rewards and contributing to the security of the broader ecosystem, similar to EigenLayer's model on Ethereum.
+- **Slashing and Accountability:** Services can define their own slashing conditions, ensuring that stakers are held accountable for misbehavior and that security is enforced in a decentralized, programmable way.
+
+### Leveraging the Internet Computer (ICP)
+- **True Cross-Chain Integration:** ICP's Chain Fusion technology allows canisters to natively hold, send, and verify Dogecoin, enabling seamless cross-chain restaking without bridges or custodians.
+- **Scalability and Speed:** ICP provides high throughput, low latency, and on-chain programmability, making it ideal for building scalable restaking and security protocols.
+- **Composability:** Canisters on ICP can interact with each other and with external blockchains, allowing for rich, composable security and staking applications.
+
 ## Overview
 - **Users** can deposit Dogecoin (DOGE) into the canister using ck-doge integration.
 - **Restaking:** Users can assign their DOGE stake to secure any number of services (AVS: Actively Validated Services).
