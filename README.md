@@ -1,5 +1,7 @@
 # Dogity: Restaking with Dogecoin on ICP
 
+![Dogity logo](dogity.png)
+
 This project implements a modular restaking protocol inspired by EigenLayer, but using Dogecoin (via ck-doge/Chain Fusion) as the staking token on the Internet Computer (ICP).
 
 ## Why Restake with Dogecoin on ICP?
