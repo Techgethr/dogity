@@ -4,10 +4,10 @@
 
 This project implements a modular restaking protocol inspired by EigenLayer, but using Dogecoin (via ck-doge/Chain Fusion) as the staking token on the Internet Computer (ICP).
 
-## Bringing the DogeFi economy to ICP
-**DogeFi** is a system where DOGE is plugged into decentralized financial services, including lending, borrowing, yield farming, etc.
+## Bringing the DogeFi economy to ICP with Dogity
+**DogeFi** is a economic model where DOGE is plugged into decentralized financial services, including lending, borrowing, yield farming, etc.
 
-With **DogeFi**, we can also leverage the currency's decentralized economy and network to build various products (Finance, DePIN, AI, and more) taking advantage of its economic security (with a market capitalization of over US$30 billion).
+With **Dogity**, we can also leverage the currency's decentralized economy and network to build various products (Finance, DePIN, AI, and more) taking advantage of its economic security (with a market capitalization of over US$30 billion).
 
 ## Why Restake with Dogecoin on ICP?
 
